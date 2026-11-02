@@ -1,0 +1,20 @@
+ 1. Line 8: <title> is inside <body>. Move it into <head> (before line 6).
+ 2. Line 9: <h1> incorrectly closes with </h2>. Use </h1>.
+ 3. Line 10: Missing </p> at the end of the paragraph.
+ 4. Line 13: Incorrectly nested closing tags. Use <p>It is a <strong>great place to explore</strong></p>.
+ 5. Line 18: Missing </li> after City Museum.
+ 6. Line 20: <ul> is closed with </ol>. Use </ul>.
+ 7. Line 22: <a> uses src instead of href. Change to href="https://www.example.com".
+ 8. Line 23: target="blank" should be target="_blank" to explicitly request a new tab/window.
+ 9. Lines 24–25: Link to #gallery has no matching ID. Add id="gallery" to the Photo Gallery heading.
+10. Line 26: <img> uses href instead of src. Use src="../Assets/Images/Montreal-1.jpg".
+11. Line 27: Image path is relative to the wrong folder. Use src="../Assets/Images/Montreal-1.jpg".
+12. Line 27: Image is missing alt text. Add alt="Historic street".
+13. Line 30: The second table header closes with </td>. Use </th>.
+14. Line 31: Missing </td> after $15.
+15. Line 36: Video path goes up too many levels. Use src="../Assets/Videos/city-tour.mp4".
+16. Line 39: Invalid form method="banana". Use method="get" (or remove method; GET is the default).
+17. Lines 40–41: The name label's for="visitor-name" does not match input id="full-name". Make them match.
+18. Line 43: required="false" still makes an HTML boolean attribute active. Remove required to make the field optional, or use required to make it mandatory.
+19. Line 49: type="button" does not submit the form. Use type="submit".
+20. Line 52: Missing </body> before </html>.
