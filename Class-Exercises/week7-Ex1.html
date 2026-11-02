@@ -1,34 +1,34 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <title>Explore My Favourite City</title>
-    <h1>Welcome to My Favourite City</h2>
-    <p>This page introduces my favourite city and some places to visit.
+    <title>Explore My Favourite City</title> <!-- title should be in the head -->
+    <h1>Welcome to My Favourite City</h2> <!-- should be h1 -->
+    <p>This page introduces my favourite city and some places to visit. <!-- no close -->
     <h2>About the City</h2>
     <p>The city has museums, parks, and interesting neighbourhoods.</p>
-    <p>It is a <strong>great place to explore</p></strong>
+    <p>It is a <strong>great place to explore</p></strong> <!-- strong should be closed before the p closes -->
     <hr>
     <h2>Top Attractions</h2>
     <ul>
         <li>Old Town</li>
-        <li>City Museum
+        <li>City Museum <!-- missing a closure -->
         <li>Botanical Garden</li>
-    </ol>
+    </ol> <!-- should be an ul since we are closing a list/match its twin on line 16 -->
     <h2>Useful Links</h2>
-    <a src="https://www.mtl.org/en">Tourism information</a>
-    <a href="https://www.mtl.org/en" target="blank">Open tourism site in a new tab</a>
+    <a src="https://www.mtl.org/en">Tourism information</a> <!-- href instead of src -->
+    <a href="https://www.mtl.org/en" target="blank">Open tourism site in a new tab</a> <!-- underscore inside the quotations, but before blank -->
     <a href="#gallery">Jump to the photo gallery</a>
     <h2>Photo Gallery</h2>
-    <img href="../Assets/Images/city-view.jpg" alt="City skyline" width="400">
-    <img src="Assets/Images/old-town.jpg" width="400">
+    <img href="../Assets/Images/city-view.jpg" alt="City skyline" width="400"> <!-- should be src instead of href -->
+    <img src="Assets/Images/old-town.jpg" width="400"> <!-- does not have an alt text (alt = "words") -->
     <h2>Attraction Prices</h2>
     <table>
-        <tr><th>Attraction</th><th>Admission</td></tr>
-        <tr><td>City Museum</td><td>$15</tr>
+        <tr><th>Attraction</th><th>Admission</td></tr> <!-- instead of td it should be th (its twin) -->
+        <tr><td>City Museum</td><td>$15</tr> <!-- td after tr to close (its twin) -->
         <tr><td>Botanical Garden</td><td>$10</td></tr>
     </table>
     <h2>City Video</h2>
@@ -36,17 +36,17 @@
         <source src="../Assets/Videos/Montreal-Vid-1.mp4" type="video/mp4">
     </video>
     <h2>Plan Your Visit</h2>
-    <form method="banana">
+    <form method="banana"> <!-- either the word get or the word post, banana does not exist -->
         <label for="visitor-name">Your name:</label>
         <input type="text" id="full-name" name="visitor-name">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required="false">
+        <input type="email" id="email" name="email" required="false"> <!-- to make it required, we just have to write required> -->
         <label for="season">Preferred season:</label>
         <select id="season" name="season">
             <option value="spring">Spring</option>
             <option value="summer">Summer</option>
         </select>
-        <button type="button">Submit</button>
+        <button type="button">Submit</button> <!-- type will be submit, not button  -->
     </form>
     <p>Thanks for visiting this page!</p>
 </html>
